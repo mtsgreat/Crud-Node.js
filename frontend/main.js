@@ -1,6 +1,23 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
+import Login from './modules/Login';
+import Contato from './modules/Contato';
+
+const login = new Login('.form-login');
+const cadastro = new Login('.form-cadastro');
+
+const contato = new Contato('.form-contato');
+
+
+// Validação tela de login e cadastro
+login.init();
+cadastro.init();
+
+
+//Validação cadastro e tela de edição
+contato.init();
+
 //import './assets/css/style.css';
 
 
